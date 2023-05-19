@@ -1,0 +1,87 @@
+###############
+# Automathink #
+###############
+
+# This file contains enhanced settings following the .NET Core Coding Style and C# Coding Conventions.
+
+# Top-level EditorConfig file
+root = true
+
+# General indentation and whitespace settings
+[*]
+indent_style = space
+indent_size = 4
+end_of_line = lf
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+# C# specific settings
+[*.cs]
+# Enforce using spaces for indentation
+indent_style = space
+indent_size = 4
+
+# Specify the preferred ordering of using directives
+dotnet_sort_system_directives_first = true
+dotnet_separate_import_directive_groups = true
+
+# Organize and sort C# using statements
+csharp_separate_import_directive_groups = true
+csharp_using_directive_placement = outside_namespace
+
+# Specify the maximum line length
+max_line_length = 120
+
+# Specify naming conventions
+dotnet_naming_rule.interface_should_begin_with_i.severity = warning
+dotnet_naming_rule.interface_should_begin_with_i.symbols = interface
+dotnet_naming_rule.interface_should_begin_with_i.style = begins_with_i
+
+dotnet_naming_rule.types_should_be_pascal_case.severity = warning
+dotnet_naming_rule.types_should_be_pascal_case.symbols = types
+dotnet_naming_rule.types_should_be_pascal_case.style = pascal_case
+
+dotnet_naming_rule.non_field_members_should_be_pascal_case.severity = warning
+dotnet_naming_rule.non_field_members_should_be_pascal_case.symbols = non_field_members
+dotnet_naming_rule.non_field_members_should_be_pascal_case.style = pascal_case
+
+dotnet_naming_rule.static_readonly_fields_should_be_pascal_case.severity = warning
+dotnet_naming_rule.static_readonly_fields_should_be_pascal_case.symbols = static_readonly_fields
+dotnet_naming_rule.static_readonly_fields_should_be_pascal_case.style = pascal_case
+
+# Enforce explicit this keyword usage for non-static members
+dotnet_style_qualification_for_field = true:warning
+dotnet_style_qualification_for_property = true:warning
+dotnet_style_qualification_for_method = true:warning
+
+# Enforce using var instead of explicit type declarations when the type is obvious
+dotnet_style_var_when_type_is_apparent = true:warning
+
+# Specify the usage of var for built-in types in foreach loops
+dotnet_style_predefined_type_for_locals_parameters_members = true:warning
+csharp_style_var_for_built_in_types = true:warning
+
+# Enforce using expression-bodied members when possible
+csharp_style_expression_bodied_methods = true:warning
+csharp_style_expression_bodied_constructors = true:warning
+csharp_style_expression_bodied_properties = true:warning
+csharp_style_expression_bodied_indexers = true:warning
+csharp_style_expression_bodied_accessors = true:warning
+
+# Specify the preferred location for braces in control flow statements
+csharp_new_line_before_open_brace = control_structures:warning
+csharp_new_line_before_else = true:warning
+csharp_new_line_before_catch = true:warning
+csharp_new_line_before_finally = true:warning
+
+# Enforce consistent spacing around operators
+csharp_space_around_binary_operators = before_and_after
+
+# Enforce using language keywords instead of BCL types (e.g., string instead of String)
+dotnet_naming_rule.use_framework_types.severity = warning
+dotnet_naming_rule.use_framework_types.symbols = types
+dotnet_naming_rule.use_framework_types.style = framework_type
+
+# Specify file encoding
+[*.{cs,vb}]
+charset = utf-8

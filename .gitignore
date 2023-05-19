@@ -11,6 +11,9 @@
 **/*.pdb
 **/*.user
 **/*.generated.json
+**/*.vsidx
+**/*.wsuo
+read.lock
 
 # Blazor WebAssembly specific
 **/wwwroot/dist/
