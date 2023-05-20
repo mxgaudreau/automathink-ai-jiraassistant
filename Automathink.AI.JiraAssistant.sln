@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33712.159
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automathink.AI.JiraAssistant.UI", "Automathink.AI.JiraAssistant.UI\Automathink.AI.JiraAssistant.UI.csproj", "{FFB35D43-CD96-4DC8-9AA4-00FE5FA3AA82}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Automathink.AI.JiraAssistant.UI", "Automathink.AI.JiraAssistant.UI\Automathink.AI.JiraAssistant.UI.csproj", "{FFB35D43-CD96-4DC8-9AA4-00FE5FA3AA82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automathink.AI.JiraAssistant.Server", "Automathink.AI.JiraAssistant.Server\Automathink.AI.JiraAssistant.Server.csproj", "{F14A780E-D304-4EF3-855E-C4C9CD45AE7D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automathink.AI.JiraAssistant.JiraService", "Automathink.AI.JiraAssistant.JiraService\Automathink.AI.JiraAssistant.JiraService.csproj", "{383CFC77-CAFC-4E6D-8471-FCB653B61F27}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automathink.AI.JiraAssistant.OpenAIService", "Automathink.AI.JiraAssistant.OpenAIService\Automathink.AI.JiraAssistant.OpenAIService.csproj", "{3883628D-9BFE-42A0-B7F8-B89340715147}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{FFB35D43-CD96-4DC8-9AA4-00FE5FA3AA82}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FFB35D43-CD96-4DC8-9AA4-00FE5FA3AA82}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FFB35D43-CD96-4DC8-9AA4-00FE5FA3AA82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F14A780E-D304-4EF3-855E-C4C9CD45AE7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F14A780E-D304-4EF3-855E-C4C9CD45AE7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F14A780E-D304-4EF3-855E-C4C9CD45AE7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F14A780E-D304-4EF3-855E-C4C9CD45AE7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{383CFC77-CAFC-4E6D-8471-FCB653B61F27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{383CFC77-CAFC-4E6D-8471-FCB653B61F27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{383CFC77-CAFC-4E6D-8471-FCB653B61F27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{383CFC77-CAFC-4E6D-8471-FCB653B61F27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3883628D-9BFE-42A0-B7F8-B89340715147}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3883628D-9BFE-42A0-B7F8-B89340715147}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3883628D-9BFE-42A0-B7F8-B89340715147}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3883628D-9BFE-42A0-B7F8-B89340715147}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
